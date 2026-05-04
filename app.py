@@ -13,13 +13,12 @@ from routeros_api import RouterOsApiPool
 app = Flask(__name__)
 
 # Environment variables
-BOT_TOKEN = '8166723280:AAGut4nMPkS7Trdl2WFxC3klQcaQRoWeLCE'
-ROUTER_HOST = os.getenv('hk80aj4gerg.sn.mynetname.net')
-ROUTER_PORT = int(os.getenv('ROUTER_PORT','8728'))
-ROUTER_USER = os.getenv('admin')
-ROUTER_PASS = os.getenv('Mashhurbek_2006@')
-ADMIN_IDS = set(map(int, os.getenv('ADMIN_IDS', '5469081053').split(','))) if os.getenv('ADMIN_IDS') else set()
-
+BOT_TOKEN = '8166723280:AAHLh5VAs2hxWOHdL7Eyg7I5ypSz-soeSlQ'
+ROUTER_HOST = 'hk80aj4gerg.sn.mynetname.net'  # Bu yerga MikroTik Cloud DNS nomini yozganingiz ma'qul
+ROUTER_PORT = 8728
+ROUTER_USER = 'admin'
+ROUTER_PASS = 'Mashhurbek_2006@'
+ADMIN_IDS = {5469081053}
 # Logging setup
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
