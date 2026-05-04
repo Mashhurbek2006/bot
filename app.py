@@ -13,8 +13,8 @@ from routeros_api import RouterOsApiPool
 app = Flask(__name__)
 
 # Environment variables
-BOT_TOKEN = '8166723280:AAHLh5VAs2hxWOHdL7Eyg7I5ypSz-soeSlQ'
-ROUTER_HOST = os.getenv('94.158.58.43')
+BOT_TOKEN = '8166723280:AAGut4nMPkS7Trdl2WFxC3klQcaQRoWeLCE'
+ROUTER_HOST = os.getenv('hk80aj4gerg.sn.mynetname.net')
 ROUTER_PORT = int(os.getenv('ROUTER_PORT','8728'))
 ROUTER_USER = os.getenv('admin')
 ROUTER_PASS = os.getenv('Mashhurbek_2006@')
