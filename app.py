@@ -542,8 +542,8 @@ def cmd_help(chat_id):
     return msg
 
 # ============== Main Webhook ==============
-@app.route(f'/{BOT_TOKEN}', methods=['POST'])
-def webhook():
+@app.route('/webhook', methods=['POST'])
+def telegram_webhook():
     """Main webhook handler"""
     try:
         update = request.get_json(force=True)
