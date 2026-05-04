@@ -15,7 +15,7 @@ app = Flask(__name__)
 # Environment variables
 BOT_TOKEN = os.getenv('8166723280:AAHLh5VAs2hxWOHdL7Eyg7I5ypSz-soeSlQ')
 ROUTER_HOST = os.getenv('192.168.88.1')
-ROUTER_PORT = int(os.getenv('8728'))
+ROUTER_PORT = int(os.getenv('ROUTER_PORT','8728'))
 ROUTER_USER = os.getenv('admin')
 ROUTER_PASS = os.getenv('Mashhurbek_2006@')
 ADMIN_IDS = set(map(int, os.getenv('ADMIN_IDS', '5469081053').split(','))) if os.getenv('ADMIN_IDS') else set()
