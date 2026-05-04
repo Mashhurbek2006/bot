@@ -18,7 +18,7 @@ ROUTER_HOST = 'hk80aj4gerg.sn.mynetname.net'  # Bu yerga MikroTik Cloud DNS nomi
 ROUTER_PORT = 8728
 ROUTER_USER = 'admin'
 ROUTER_PASS = 'Mashhurbek_2006@'
-ADMIN_IDS = {5469081053}
+ADMIN_IDS = {1867921120}
 # Logging setup
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
